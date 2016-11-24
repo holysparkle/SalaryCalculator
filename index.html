@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>salary Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Salary Calculator</h1>
+  
+</div>
+
+    <div class="container">
+<div class="row">
+  <div class="col-sm-3"> </div>
+  <div class="col-sm-5">
+    <form>
+        
+        <div class=form-group>
+            <label for="Enter Number">Enter Salary here:</label>
+            <input type="number" class="form-control" id="enterSalary" placeholder="£">
+            
+        </div>
+
+    
+    </form>
+
+            
+
+  </div>
+  <div class="col-sm-3"> </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-3"><button type="button" class="btn btn-success" id="Submit" onkeydown="enterKey()">Submit</button></div>
+    <div class="col-sm-3"> <button type="button" class="btn btn-success" id="SwitchChart">Switch Charts</button></div>
+    <div class="col-sm-3"></div>
+</div>
+
+<div class="row">
+    
+    
+    <div class="col-sm-1"></div>
+  <div class="col-sm-5"> 
+    <table class="table table-hover">
+      <thead>
+        <th>Calculation</th>
+        <th>Amount</th>
+        </thead>
+        
+        <tr>
+            <td >National Insurance Number</td>
+            <td id="nin"></td>
+        </tr>
+        <tr>
+            <td >Total Deduction</td>
+            <td id="totDed"></td>
+        </tr>
+            <tr>
+            <td>Tax Free Allowance</td>
+            <td>£11,000</td>
+        </tr>
+        <tr>
+            
+        </tr>
+
+      </table></div>
+    
+    
+    
+    
+  <div class="col-sm-5">
+    
+    
+    <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Calculation</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Gross Salary</td>
+        <td id="input1"></td>
+       
+      </tr>
+      <tr>
+          <td> <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo, #input2, #input3">Total Tax Deducted</button></td>
+            <td id="totalTax"></td>
+      </tr>
+        <tr id="demo" class="collapse">
+        <td>Basic Tax Rate 20%</td>
+        <td id="input2">--</td>
+      </tr>
+        <tr id="demo" class="collapse">
+        <td>Tax Rate 45%</td>
+       <td id ="input5"></td>
+        </tr>
+        <tr id="demo" class="collapse">
+        <td>Tax Rate 40%</td>
+        <td id="input3" >--</td>
+      </tr>
+      
+
+      <tr>
+        <td>Net salary</td>
+        <td id="input4">--</td>
+<div class="sm-col-1"></div>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+    
+ </div>   
+<div id="chartContainer" style="height: 300px; width: 100%;">  </div>
+    
+    
+<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    
+    
+    
+    
+<script src=javascript.js>
+</script>
+  
+</body>
+</html>
